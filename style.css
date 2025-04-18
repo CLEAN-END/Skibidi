@@ -1,0 +1,48 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Roboto:wght@300;700&display=swap');
+
+body {
+  margin: 0;
+  padding-top: 60px; /* Height of navbar */
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(to right, #001f3f, #005f9e);
+  color: #fff;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 31, 63, 0.95);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  padding: 10px 15px;
+}
+
+.navbar a:hover {
+  background: rgba(255,255,255,0.2);
+  border-radius: 4px;
+}
+
+/* Responsive: wrap links on small screens */
+@media (max-width: 600px) {
+  .navbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 10px 0;
+  }
+}
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+}
