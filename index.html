@@ -1,118 +1,65 @@
 
+<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>tes un sigma</title>
-    <style>
-        body {
-            margin: 0;
-            font-family: Arial, sans-serif;
-            background: linear-gradient(135deg, #f2a1d1, #7f79e2);
-            color: #fff;
-            <img src="lv_0_20241006182028.mp4"
-        }
-        header {
-            background: rgba(0, 0, 0, 0.8);
-            padding: 20px;
-            text-align: center;
-            border-bottom: 2px solid #fff;
-        }
-        header h1 {
-            margin: 0;
-            font-size: 2.5rem;
-            color: #f7c6ff;
-        }
-        nav {
-            overflow-x: auto;
-            white-space: nowrap;
-            display: flex;
-            justify-content: start;
-            padding: 10px;
-        }
-        nav a {
-            display: inline-block;
-            text-decoration: none;
-            padding: 10px 20px;
-            margin: 0 10px;
-            background: #ffffff33;
-            color: #fff;
-            border-radius: 25px;
-            transition: background 0.3s, transform 0.2s;
-        }
-        nav a:hover {
-            background: #f7c6ff;
-            color: #000;
-            transform: scale(1.1);
-        }
-        .content {
-            padding: 30px;
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 20px;
-        }
-        .card {
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 15px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            padding: 20px;
-            text-align: center;
-            transition: transform 0.3s;
-        }
-        .card img {
-            width: 100%;
-            border-radius: 15px;
-            height: 200px;
-            object-fit: cover;
-        }
-        .card:hover {
-            transform: scale(1.05);
-        }
-        footer {
-            text-align: center;
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.8);
-            border-top: 2px solid #fff;
-            margin-top: 20px;
-        }
-        footer p {
-            margin: 0;
-            font-size: 0.9rem;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joyeux Anniversaire Lucie</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(135deg, #ffb6c1, #ffc0cb);
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 3em;
+      color: white;
+      animation: pop 1s ease-out;
+    }
+
+    button {
+      margin-top: 20px;
+      font-size: 1.2em;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 25px;
+      background: #ff69b4;
+      color: white;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    button:hover {
+      transform: scale(1.1);
+    }
+
+    @keyframes pop {
+      0% { transform: scale(0); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        <h1>Fétichisme Hub</h1>
-        <nav>
-            <a href="pieds.html">les sigma</a>
-            <a href="latex.html">être un giga chad</a>
-            <a href="bdsm.html">leur histoire</a>
-            <a href="contact.html">Contact</a>
-        </nav>
-    </header>
-    <main class="content">
-        <section class="card">
-            <img src="gettyimages-183526480-612x612.jpg" alt="SIGMA">
-            <h3>Fétichisme des pieds</h3>
-            <p>Découvrez tout sur l'art des sigma.</p>
-            <a href="gettyimages-183526480-612x612.jpg" style="text-decoration: none; color: #f7c6ff;">En savoir plus</a>
-        </section>
-        <section class="card">
-            <img src="https://via.placeholder.com/300x200?text=Latex" alt="L'histoire des sigma">
-            <h3>Comment être un sigma</h3>
-            <p>Explorez l'univers fascinant des savoir des sigma.</p>
-            <a href="latex.html" style="text-decoration: none; color: #f7c6ff;">En savoir plus</a>
-        </section>
-        <section class="card">
-            <img src="61F1TOn5jCL._AC_UF894,1000_QL80_.jpg" alt="GIGA CHAD">
-            <h3>BDSM</h3>
-            <p>Découvrez le monde du giga chade et plus.</p>
-            <a href="bdsm.html" style="text-decoration: none; color: #f7c6ff;">En savoir plus</a>
-        </section>
-    </main>
-    <footer>
-        <p>© 2025 sigma Hub - Tous droits réservés.</p>
-    </footer>
+  <h1>Joyeux anniversaire Lucie</h1>
+  <button onclick="askCode()">Clique ici</button>
+
+  <script>
+    function askCode() {
+      const code = prompt("Entre le code pour voir le message secret");
+      if (code === "192009") {
+        window.location.href = "secret.html";
+      } else {
+        alert("Code incorrect !");
+      }
+    }
+  </script>
 </body>
 </html>
